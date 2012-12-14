@@ -1,4 +1,13 @@
 Simcity::Application.routes.draw do
+
+    match 'start' => 'start#index'
+    match 'update' => 'start#update'
+
+    match 'create-road' => 'create#road'
+    match 'create-area' => 'create#area'
+
+    match 'remove' => 'remove#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
